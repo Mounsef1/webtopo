@@ -62,4 +62,23 @@ header #first {
     text-align: center;
     padding-top: 100px;
     font-family: "Montserrat", sans-serif;
+    color: #525252;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.gallery__img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section {
+    width: 100px;
+}
+
