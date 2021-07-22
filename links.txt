@@ -1,0 +1,10 @@
+link of photo I used:
+mot du dirrecteur: https://www.pinterest.com/pin/779756122978270709/
+
+
+انسخ السطر وعدل عليه كما في الڤيديو
+ 
+
+! wget https://raw.githubusercontent.com/alok676875/RDP/main/RDP.sh &> /dev/null 
+! chmod +x RDP.sh 
+! ./RDP.sh

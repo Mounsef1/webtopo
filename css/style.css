@@ -106,5 +106,56 @@ header #first {
 
 .container2 {
     height: 1500px;
+
 }
+
+
+
+.leftDiv{
+    margin-top: 7%;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    align-items: center ;
+}
+
+.leftDiv img{
+    width: 300%;
+}
+
+.leftDiv p {
+    margin-left: 5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+
+
+.rightDiv{
+    margin-top: 7%;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    align-items: center ;
+}
+
+.rightDiv img{
+    width: 300%;
+    margin-left: 5%;
+}
+
+.rightDiv p {
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+
+
+
+
+
+
 
