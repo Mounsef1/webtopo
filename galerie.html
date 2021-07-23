@@ -1,35 +1,107 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/3c1e40956c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>GALERIE</title>
-</head>
-<body>
-    <header class="site-header">
-      
-      <img class="logo" src="images/1589768539687.jpeg" alt="logo">
-      
-      <nav>
-        <ul class="nav-links">
-          <li id="first"><a href="index.html">ACCEUIL</a></li>
-          <li><a href="apropos.html">A PROPOS</a></li>
-          <li><a href="galerie.html">GALERIE</a></li>
-          <li><a href="devis.html">DEVIS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    
+  </head>
+  
+    <div>
+      <header class="site-header">
+        <img class="logo" src="images/logo.jpeg" alt="logo" />
 
+        <nav>
+          <ul class="nav-links">
+            <li id="first"><a href="index.html">ACCEUIL</a></li>
+            <li><a href="apropos.html">A PROPOS</a></li>
+            <li><a href="galerie.html">GALERIE</a></li>
+            <li><a href="devis.html">DEVIS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <img
+          class="main-image"
+          src=""
+          alt=""
+        />
+      </section>
+  
+      <section class="title2">
+        <p data-aos="zoom-in" data-aos-duration="1000">Gallery</p>
+      </section>
+  <body >
+    <!-- The four columns -->
+    <div class="row" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="500">
+      <div class="column">
+        <img
+          src="images/logo.jpeg"
+          alt="Nature"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="images/logo.jpeg"
+          alt="Snow"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="images/logo.jpeg"
+          alt="Mountains"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="images/logo.jpeg"
+          alt="Lights"
+          style="width: 100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+    </div>
+
+    <div class="containerr">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+        >&times;</span
+      >
+      <img id="expandedImg" style="width: 100%" />
+      <div id="imgtext"></div>
+    </div>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+    </style>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
-
-    
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
   </body>
 </html>
